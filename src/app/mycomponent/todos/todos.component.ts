@@ -13,7 +13,7 @@ export class TodosComponent {
     constructor(){
       
       console.log(localStorage.getItem("todos"));
-      this.localItem =JSON.parse(localStorage.getItem("todos") || '{}');
+      // this.localItem =JSON.parse(localStorage.getItem("todos") || '{}');
       if(this.localItem==null){
         this.todos=[];
       }
