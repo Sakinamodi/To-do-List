@@ -1,0 +1,21 @@
+<div class="my-3">
+<h4>Add A ToDo</h4>
+<form (ngSubmit)="onSubmit()">
+<div class="mb-3 row">
+    <label for="title" class="col-sm-2 col-form-label">Add Event</label>
+    <div class="col-sm-10">
+
+      <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title">
+    </div>
+</div>
+<div class="mb-3 row">
+    <label for="desc" class="col-sm-2 col-form-label">Add Date</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" id="desc" [(ngModel)]="desc" name="desc">
+    </div>
+</div>
+<div>
+    <button type="submit" class="btn btn-primary">Add ToDo</button>
+</div>
+</form>
+</div>
